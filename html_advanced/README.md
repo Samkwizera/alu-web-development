@@ -24,3 +24,5 @@ This project focuses on creating a **webpage structure from scratch** based on a
 1. **Clone the repository**:
    ```bash
    git clone https://github.com/Samkwizera/alu-web-development
+   
+![DALL·E 2025-01-15 21 56 35 - A modern flat design illustration of a webpage layout showing a header with navigation, a large central banner with an image and text, multiple sectio](https://github.com/user-attachments/assets/b3794002-b3b9-4579-b63e-26b42e9e9a85)

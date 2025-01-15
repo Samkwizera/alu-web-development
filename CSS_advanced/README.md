@@ -1,0 +1,24 @@
+# ALU Web Development Project - CSS Advanced
+
+## Overview
+This project is focused on **enhancing the style and visual presentation** of the webpage structure built in the **HTML Advanced** project. Using the design file provided in Figma, the objective is to match the design specifications precisely with CSS styling.
+
+## Objectives
+- Implement the layout and style according to the Figma design file.
+- Apply typography settings (fonts, text sizes, and weights).
+.
+
+## Tools and Resources
+- **Figma**: [Access the design](https://www.figma.com/) by duplicating the file to your drafts.
+- **Fonts**:
+  - `Source Sans Pro` – [Google Fonts](https://fonts.google.com/specimen/Source+Sans+Pro)
+  - `Spin Cycle OT` – Available via Figma font settings or external download.
+- **Code Editor**: Any (VS Code, Sublime Text, etc.)
+- **Browser**: For testing the page and ensuring responsive design.
+
+## Folder Structure
+```plaintext
+css_advanced/
+├── index.html   # Copied from html_advanced
+├── README.md    # Project documentation
+└── styles.css   # CSS for advanced styling

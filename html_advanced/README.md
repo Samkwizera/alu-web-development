@@ -16,7 +16,7 @@ This project focuses on creating a **webpage structure from scratch** based on a
   - `Source Sans Pro` – [Download here](https://fonts.google.com/specimen/Source+Sans+Pro)
   - `Spin-Cycle-OT` – Available via the Figma font list or font provider.
 - **Text editor**: Any (VS Code, Sublime Text, etc.)
-![alt text](<DALL·E 2025-01-15 21.56.35 - A modern flat design illustration of a webpage layout showing a header with navigation, a large central banner with an image and text, multiple sectio.webp>)
+ c:\Users\samue\Desktop\alu-web-development\html_advanced\images\DALL·E 2025-01-15 21.56.35 - A modern flat design illustration of a webpage layout showing a header with navigation, a large central banner with an image and text, multiple sectio.webp
 
 ---
 

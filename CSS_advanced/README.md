@@ -26,6 +26,6 @@ git clone https://github.com/Samkwizera/alu-web-development
 ├── README.md    # Project documentation
 └── styles.css   # CSS for advanced styling
 
-![setup 2](https://github.com/user-attachments/assets/24fc5016-64d0-411c-ac1e-587af1bf13e5)
+
 
 

@@ -1,322 +1,491 @@
 /* General Styles */
 body {
     margin: 0;
-    font-family: 'Source Sans Pro', Arial, sans-serif;
-    line-height: 1.6;
+    font-family: Arial, sans-serif;
     color: #333;
-    background-color: #ffffff; /* White background for the entire page */
-}
-
-h1, h2, h3, p {
-    margin: 0;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-button {
-    border: none;
-    cursor: pointer;
-}
-
-/* Header */
+    line-height: 1.5;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+ /* Header */
 .header {
-    background-color: #003366;
+    background-color: #111827; /* Dark navy color for the header */
+    color: #fff;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  .header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 40px;
-    color: white;
-}
-
-.header img {
-    width: 80px; /* Logo size */
-}
-
-.header nav a {
-    margin-left: 20px;
-    font-size: 18px;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
     font-weight: bold;
-    color: white;
-    transition: color 0.3s;
-}
-
-.header nav a:hover {
-    color: #e74c3c; /* Accent hover color */
-}
-
-/* Banner Section */
-.banner {
-    background-color: #87ceeb; /* Light blue background */
-    padding: 60px 20px;
-    text-align: center;
-    color: white;
-}
-
-.banner h1 {
-    font-size: 48px;
-    margin-bottom: 20px;
-    color: #003366;
-}
-
-.banner p {
-    font-size: 18px;
-    margin-bottom: 30px;
-    color: #ffffff;
-}
-
-.banner button {
-    background-color: #e74c3c;
-    color: white;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.banner button:hover {
-    background-color: #d62c1a;
-}
-
-/* Services Section */
-.services {
-    text-align: center;
-    padding: 40px 20px;
-}
-
-.services h2 {
-    font-size: 32px;
-    margin-bottom: 30px;
-}
-
-.service-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-}
-
-.service-card img {
-    width: 100%;
-    border-radius: 8px;
-}
-
-.service-card h3 {
-    font-size: 20px;
-    margin: 10px 0;
-}
-
-.service-card p {
-    font-size: 16px;
-    color: #555;
-}
-
-/* Quote Section */
-.quote {
-    background-color: #d3d3d3; /* Grey background */
-    color: black;
-    padding: 40px 20px;
+    color: #fff;
+  }
+  
+  .nav a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+  }
+  
+  
+  
+ /* Hero Section (Banner) */
+.hero {
+    background: url('images/istockphoto-491153246-612x612.jpg') no-repeat center center/cover; /* Replace with your banner image path */
+    height: 90vh; /* Adjust the height as needed */
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.quote-container {
-    display: flex;
-    align-items: center;
-    gap: 20px; /* Space between image and text */
-    max-width: 800px;
-    width: 100%;
-}
-
-.quote-image img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid black;
-}
-
-.quote-text blockquote {
-    font-size: 20px;
-    font-style: italic;
-    margin-bottom: 10px;
-}
-
-.quote-author {
-    font-size: 18px;
-    font-weight: bold;
-    color: #555;
-}
-
-/* Videos Section */
-.videos {
-    background-color: #a47fcf; /* Purple background */
     text-align: center;
-    padding: 40px 20px;
-    color: white;
-}
-
-.videos h2 {
-    font-size: 32px;
+    color: #fff;
+  }
+  
+  .hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Optional overlay for better text visibility */
+    z-index: 1;
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .hero h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
     margin-bottom: 30px;
-}
-
-.video-container {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #b28af7; /* Purple button */
+    color: #fff;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  
+  /* Learn from the Pros Section */
+.experts {
+    background: url('images/istockphoto-491153246-612x612.jpg') no-repeat center center/cover; /* Replace with your image path */
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .experts::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Optional overlay for better text visibility */
+    z-index: 1;
+  }
+  
+  .experts .container {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .experts h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  .experts-list {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    gap: 20px;
-}
-
-.video-card {
+  }
+  
+  .expert {
     text-align: center;
-    max-width: 200px;
-}
-
-.video-card img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 8px;
+    margin: 20px 10px;
+  }
+  
+  .expert img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
     margin-bottom: 10px;
-}
-
-.video-card h3 {
-    font-size: 16px;
-    margin-bottom: 5px;
-    color: white;
-}
-
-.video-card p {
-    font-size: 14px;
-    color: #e0e0e0;
-}
-
-/* Membership Section */
-.membership {
-    background-color: #003366; /* Dark blue background */
-    color: white;
-    text-align: center;
-    padding: 60px 20px;
-}
-
-.membership h2 {
-    font-size: 36px;
-    margin-bottom: 40px;
-    color: #9b59b6; /* Purple accent for title */
-}
-
-.membership-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    padding: 0 40px;
-}
-
-.membership-card {
-    background-color: #1a1a1a;
-    padding: 20px;
-    border-radius: 8px;
-    text-align: center;
-}
-
-.membership-logo {
-    font-size: 30px;
-    color: #ffd700;
-    margin-bottom: 10px;
-}
-
-.membership-card h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-.membership-card p {
-    font-size: 14px;
-    margin-bottom: 20px;
+  }
+  
+  .expert h3 {
+    font-size: 1.2rem;
+    color: #fff;
+  }
+  
+  .expert p {
+    font-size: 0.9rem;
     color: #ddd;
-}
-
-.membership-card button {
-    background-color: #e74c3c;
-    color: white;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.membership-card button:hover {
-    background-color: #d62c1a;
-}
-
-/* FAQ Section */
-.faq {
-    background-color: #a47fcf; /* Purple background */
+  }
+  
+  
+  /* Testimonial Section */
+  .testimonial {
+    background-color: #9b5af7;
+    color: #fff;
     text-align: center;
-    padding: 40px 20px;
-    color: white;
-}
-
-.faq h2 {
-    font-size: 32px;
-    margin-bottom: 30px;
-}
-
-.faq-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 50px 20px;
+  }
+  
+  .testimonial-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .testimonial img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+  .testimonial blockquote {
+    font-size: 1.2rem;
+    font-style: italic;
+  }
+  
+  .testimonial .author {
+    font-size: 1rem;
+  }
+  
+  .testimonial .author strong {
+    font-weight: bold;
+  }
+  
+  .testimonial .author span {
+    font-size: 0.9rem;
+    color: #e6e6e6;
+  }
+  
+  /* Tutorials Section */
+.tutorials {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .tutorials h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .tutorials h2 span {
+    color: #b28af7; /* Highlighted color for 'popular' */
+  }
+  
+  .tutorials-grid {
+    display: flex;
+    justify-content: space-between;
     gap: 20px;
-    padding: 0 40px;
-}
-
-.faq-item h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-.faq-item p {
-    font-size: 16px;
-}
-
-/* Footer */
-.footer {
-    background-color: #003366;
-    color: white;
-    padding: 20px 40px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto; /* Center container */
+  }
+  
+  .tutorial-card {
+    background: #f8f9fa;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(25% - 20px); /* Adjust width to fit four items */
+    position: relative;
+    text-align: left;
+    padding-bottom: 10px;
+  }
+  
+  .tutorial-image {
+    position: relative;
+    width: 100%;
+    height: 150px;
+  }
+  
+  .tutorial-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.8);
+    color: #333;
+    font-size: 2rem;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .tutorial-card h3 {
+    font-size: 1.2rem;
+    margin: 10px 15px 5px;
+    color: #333;
+  }
+  
+  .tutorial-card p {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0 15px 10px;
+  }
+  
+  .author {
+    display: flex;
+    align-items: center;
+    margin: 10px 15px;
+  }
+  
+  .author img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .author span {
+    font-size: 0.9rem;
+    color: #333;
+  }
+  
+  .info {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px 15px;
+    font-size: 0.9rem;
+    color: #666;
+    border-top: 1px solid #ddd;
+  }
+  
+  .stars {
+    color: #b28af7; /* Matching the purple star color */
+  }
+  
+  .duration {
+    color: #999;
+  }
+  
+ /* Membership Section */
+.membership {
+    background-color: #111827; /* Dark navy background */
+    color: #fff;
+    padding: 50px 20px;
     text-align: center;
-    font-size: 14px;
-}
-
-.footer-container {
+  }
+  
+  .membership h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #fff;
+  }
+  
+  .membership h2 span {
+    color: #b28af7; /* Purple highlight for 'Free' */
+  }
+  
+  .membership-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Spacing between items */
+    max-width: 1000px; /* Container width to center and limit size */
+    margin: 0 auto;
+  }
+  
+  .membership-item {
+    text-align: center;
+    max-width: 200px; /* Ensure items don't stretch too wide */
+  }
+  
+  .icon {
+    font-size: 2rem;
+    color: #b28af7; /* Purple for the icon */
+    margin-bottom: 15px;
+  }
+  
+  .membership-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  
+  .membership-item p {
+    font-size: 0.9rem;
+    color: #ccc;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #b28af7; /* Purple button */
+    color: #fff;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #9f72d1; /* Darker purple on hover */
+  }
+  
+  /* FAQ Section */
+.faq {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .faq h1 {
+    font-size: 2.5rem; /* Larger title */
+    color: #333;
+    margin-bottom: 40px;
+    font-weight: bold;
+  }
+  
+  .faq-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 30px; /* Spacing between blocks */
+    max-width: 1200px; /* Center the FAQ container */
+    margin: 0 auto;
+  }
+  
+  .faq-item {
+    text-align: left;
+  }
+  
+  .faq-item h3 {
+    font-size: 1.2rem; /* Reduced heading size */
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .faq-item p {
+    font-size: 0.85rem; /* Reduced text size */
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  
+  /* Footer Section */
+.footer {
+    background-color: #111827; /* Dark navy background */
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+  }
+  
+  .footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-content {
     display: flex;
     justify-content: space-between;
-    width: 100%;
-}
-
-.footer-left {
-    text-align: left;
-}
-
-.footer-right {
-    text-align: right;
-}
-
-.footer-right a {
-    margin-left: 15px;
-    color: #4CAF50;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .footer .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .social-links {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .social-links a img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-links a img:hover {
+    transform: scale(1.2);
+  }
+  
+  .github-link {
+    margin-top: 20px;
+  }
+  
+  .github-link a {
+    color: #b28af7; /* Purple link color */
+    font-size: 1rem;
     text-decoration: none;
-    font-size: 14px;
-}
-
-.footer-right a:hover {
+  }
+  
+  .github-link a:hover {
     text-decoration: underline;
-    color: #45a049;
-}
+  }
+  
+  .github-link {
+    font-size: 1rem;
+    color: #ccc; /* Lighter text for GitHub */
+  }
+  
+  .github-link a {
+    color: #b28af7; /* Purple highlight */
+  }
+  
+  .github-link a:hover {
+    text-decoration: underline;
+  }
+  
+  .copyright {
+    font-size: 0.9rem;
+    color: #ccc; /* Lighter color for subtle text */
+    margin-top: 10px;
+  }
+  
+  
+  

@@ -18,7 +18,9 @@ This project is focused on **enhancing the style and visual presentation** of th
 
 ## Folder Structure
 ```plaintext
-css_advanced/
+css_advanced/![setup 2](https://github.com/user-attachments/assets/6930cf83-3781-45c3-8d25-2359318fd516)
+
+
 ├── index.html   # Copied from html_advanced
 ├── README.md    # Project documentation
 └── styles.css   # CSS for advanced styling

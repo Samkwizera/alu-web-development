@@ -18,7 +18,14 @@ This project is focused on **enhancing the style and visual presentation** of th
 
 ## Folder Structure
 ```plaintext
-css_advanced/
+Clone the repository:
+git clone https://github.com/Samkwizera/alu-web-development
+
+
 ├── index.html   # Copied from html_advanced
 ├── README.md    # Project documentation
 └── styles.css   # CSS for advanced styling
+
+
+
+
